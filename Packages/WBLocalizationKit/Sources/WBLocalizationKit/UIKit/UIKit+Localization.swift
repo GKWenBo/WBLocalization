@@ -59,6 +59,20 @@ public extension UIView {
     }
 }
 
+public extension UIScrollView {
+    /// 滚动到内容的起始边：LTR 为最左侧，RTL 为最右侧。
+    ///
+    /// 实测 UIScrollView / UICollectionView 在 RTL 下内容会镜像，但初始 contentOffset 仍为 0（最左侧），
+    /// 横向列表需要在内容尺寸确定后调用一次（SwiftUI 的 ScrollView 会自动处理）。
+    func scrollToLeadingEdge(animated: Bool = false) {
+        let inset = adjustedContentInset
+        let x = isRightToLeft
+            ? max(contentSize.width + inset.right - bounds.width, -inset.left)
+            : -inset.left
+        setContentOffset(CGPoint(x: x, y: contentOffset.y), animated: animated)
+    }
+}
+
 public extension UIImage {
     /// 方向性图片（箭头、返回、前进、列表缩进等）：在 RTL 布局的 UIImageView/UIButton 中自动水平翻转。
     /// 不要用于播放键、Logo、对勾、时钟、带文字的图片等「与阅读方向无关」的图片。

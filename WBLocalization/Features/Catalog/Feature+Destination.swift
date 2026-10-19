@@ -6,57 +6,34 @@ extension Feature {
     @MainActor @ViewBuilder
     var swiftUIDestination: some View {
         switch self {
-        default:
-            PlaceholderView(feature: self)
+        case .basicText: BasicTextView()
+        case .plurals: PluralsView()
+        case .formatting: FormattingView()
+        case .bidiText: BidiTextView()
+        case .rtlLayout: RTLLayoutView()
+        case .longText: LongTextView()
+        case .typography: TypographyView()
+        case .images: ImagesView()
+        case .input: InputView()
+        case .systemStrings: SystemStringsView()
+        case .serverContent: ServerContentView()
         }
     }
 
     @MainActor
     func makeViewController() -> UIViewController {
         switch self {
-        default:
-            PlaceholderViewController(feature: self)
+        case .basicText: BasicTextViewController()
+        case .plurals: PluralsViewController()
+        case .formatting: FormattingViewController()
+        case .bidiText: BidiTextViewController()
+        case .rtlLayout: RTLLayoutViewController()
+        case .longText: LongTextViewController()
+        case .typography: TypographyViewController()
+        case .images: ImagesViewController()
+        case .input: InputViewController()
+        case .systemStrings: SystemStringsViewController()
+        case .serverContent: ServerContentViewController()
         }
-    }
-}
-
-/// 尚未实现的功能占位页。
-struct PlaceholderView: View {
-    let feature: Feature
-
-    var body: some View {
-        Text(L10n.Common.comingSoon)
-            .foregroundColor(.secondary)
-            .navigationTitle(feature.title)
-    }
-}
-
-final class PlaceholderViewController: UIViewController {
-    private let feature: Feature
-
-    init(feature: Feature) {
-        self.feature = feature
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    @available(*, unavailable)
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = feature.title
-        view.backgroundColor = .systemBackground
-
-        let label = UILabel()
-        label.text = L10n.Common.comingSoon
-        label.textColor = .secondaryLabel
-        label.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(label)
-        NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-        ])
     }
 }

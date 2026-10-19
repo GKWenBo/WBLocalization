@@ -23,7 +23,10 @@ struct AppLanguageTests {
     }
 
     @Test func availableInBundle() throws {
-        let languages = AppLanguage.available(in: try Fixture.makeBundle())
+        let bundle = try Fixture.makeBundle()
+        // Info.plist 含 CFBundleLocalizations 时 Bundle.localizations 会出现重复项
+        #expect(bundle.localizations.count > Set(bundle.localizations).count)
+        let languages = AppLanguage.available(in: bundle)
         // 跟随系统在首位，开发语言其次，其余按代码排序
         #expect(languages == [.system, .specific("zh-Hans"), .specific("ar"), .specific("en"), .specific("ru")])
     }

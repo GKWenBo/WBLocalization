@@ -1,6 +1,1224 @@
 {
   "sourceLanguage": "zh-Hans",
   "strings": {
+    "basic.api.footer.swiftui": {
+      "comment": "SwiftUI 取值 API 说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يترجم Text إلا القيم الحرفية؛ أما متغير String فيُعرض كما هو. على iOS لا يتبع String(localized:) التبديل داخل التطبيق حتى إعادة التشغيل، لذا مرّر bundle: .localized."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text lokalisiert nur Literale; eine String-Variable wird unverändert angezeigt. Unter iOS folgt String(localized:) dem Sprachwechsel in der App erst nach einem Neustart – übergib daher bundle: .localized."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text only localizes string literals; a String variable is shown verbatim. On iOS, String(localized:) ignores in-app switching until relaunch, so pass bundle: .localized."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text はリテラルのみローカライズし、String 変数はそのまま表示されます。iOS の String(localized:) は再起動までアプリ内の切り替えに追従しないため、bundle: .localized を渡します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text локализует только литералы; переменная String отображается как есть. В iOS String(localized:) не учитывает переключение в приложении до перезапуска — передавайте bundle: .localized."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text 只有传入字面量时才会本地化，传入 String 变量会原样显示 key。iOS 上 String(localized:) 默认不跟随 App 内切换（重启后才变），需传入 bundle: .localized。"
+          }
+        }
+      }
+    },
+    "basic.api.footer.uikit": {
+      "comment": "UIKit 取值 API 说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمر NSLocalizedString عبر الحزمة المستبدلة فيتبع التبديل داخل التطبيق فورًا. أما String(localized:) على iOS فلا يتبعه حتى إعادة التشغيل، لذا مرّر bundle: .localized."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NSLocalizedString läuft über das ausgetauschte Bundle und folgt dem Sprachwechsel sofort. String(localized:) tut das unter iOS erst nach einem Neustart – übergib daher bundle: .localized."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NSLocalizedString goes through the swapped bundle and follows in-app switching immediately. On iOS, String(localized:) does not until relaunch, so pass bundle: .localized."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NSLocalizedString は差し替えた Bundle を経由するため即座に追従します。iOS の String(localized:) は再起動まで追従しないため、bundle: .localized を渡します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NSLocalizedString проходит через подменённый бандл и сразу учитывает переключение. String(localized:) в iOS — только после перезапуска, поэтому передавайте bundle: .localized."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NSLocalizedString 经过框架的 Bundle 替换，会即时跟随 App 内切换；iOS 上 String(localized:) 默认不会（重启后才变），需传入 bundle: .localized。"
+          }
+        }
+      }
+    },
+    "basic.city": {
+      "comment": "城市名，作为插值参数",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طوكيو"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tokio"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tokyo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "東京"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Токио"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "东京"
+          }
+        }
+      }
+    },
+    "basic.concat.footer": {
+      "comment": "拼接说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يؤدي الدمج إلى إفساد ترتيب الكلمات وصيغ الجمع. استخدم جملًا كاملة مع قواعد الجمع."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verkettung zerstört Wortstellung und Pluralformen. Verwende vollständige Sätze mit Pluralregeln."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concatenation breaks word order and plurals (e.g. “1 new messages”). Use complete sentences with plural rules."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "連結すると語順や複数形が崩れます。複数形ルール付きの完全な文を使いましょう。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Конкатенация ломает порядок слов и склонение («1 новых сообщений»). Используйте целые фразы с правилами множественного числа."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拼接会破坏语序和单复数（英语出现 “1 new messages”，俄语格变化错误）。应使用完整句子 + 复数规则。"
+          }
+        }
+      }
+    },
+    "basic.concat.prefix": {
+      "comment": "错误示例：拼接句子的前半段（演示用，不要这样做）",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لديك"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You have"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あなたには"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У вас"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你有"
+          }
+        }
+      }
+    },
+    "basic.concat.suffix": {
+      "comment": "错误示例：拼接句子的后半段（演示用，不要这样做）",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رسائل جديدة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "neue Nachrichten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "new messages"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "件の新着メッセージがあります"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "новых сообщений"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "条新消息"
+          }
+        }
+      }
+    },
+    "basic.greeting": {
+      "comment": "示例静态文案",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مرحبًا بك في عرض الترجمة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Willkommen in der Lokalisierungsdemo"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome to the localization demo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ローカライズのデモへようこそ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добро пожаловать в демо локализации"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "欢迎使用本地化示例"
+          }
+        }
+      }
+    },
+    "basic.messages": {
+      "comment": "新消息数量，完整句子 + 复数规则",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لديك %lld رسائل جديدة"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لديك %lld رسالة جديدة"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لديك رسالة جديدة واحدة"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لديك %lld رسالة جديدة"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لديك رسالتان جديدتان"
+                }
+              },
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ليست لديك رسائل جديدة"
+                }
+              }
+            }
+          }
+        },
+        "de": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Du hast %lld neue Nachricht"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Du hast %lld neue Nachrichten"
+                }
+              },
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Du hast keine neuen Nachrichten"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "You have %lld new message"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "You have %lld new messages"
+                }
+              },
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "You have no new messages"
+                }
+              }
+            }
+          }
+        },
+        "ja": {
+          "variations": {
+            "plural": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld 件の新着メッセージがあります"
+                }
+              },
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "新着メッセージはありません"
+                }
+              }
+            }
+          }
+        },
+        "ru": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "У вас %lld новых сообщения"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "У вас %lld новых сообщений"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "У вас %lld новое сообщение"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "У вас %lld нового сообщения"
+                }
+              },
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "У вас нет новых сообщений"
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans": {
+          "variations": {
+            "plural": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "你有 %lld 条新消息"
+                }
+              },
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "没有新消息"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "basic.positional.footer": {
+      "comment": "位置参数说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يختلف ترتيب الوسائط بحسب اللغة، لذا استخدم دائمًا المحددات الموضعية مثل %1$@ و%2$@."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Reihenfolge der Argumente ist je nach Sprache unterschiedlich. Verwende daher immer Positionsangaben wie %1$@ und %2$@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Argument order varies by language, so always use positional specifiers such as %1$@ and %2$@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "引数の順序は言語によって異なるため、%1$@ や %2$@ などの位置指定を必ず使います。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Порядок аргументов зависит от языка, поэтому всегда используйте позиционные спецификаторы, например %1$@ и %2$@."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "参数顺序因语言而异（中文名字在前，英语、日语城市在前），必须使用 %1$@、%2$@ 这样的位置参数。"
+          }
+        }
+      }
+    },
+    "basic.section.api": {
+      "comment": "分组标题：取值 API 对比",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "واجهات الاسترجاع"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abruf-APIs"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lookup APIs"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取得 API"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API получения строк"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取值 API"
+          }
+        }
+      }
+    },
+    "basic.section.concat": {
+      "comment": "分组标题：字符串拼接",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "دمج السلاسل"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeichenkettenverkettung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "String Concatenation"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文字列の連結"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Конкатенация строк"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "字符串拼接"
+          }
+        }
+      }
+    },
+    "basic.section.positional": {
+      "comment": "分组标题：位置参数",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوسائط الموضعية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positionsargumente"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Positional Arguments"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "位置指定引数"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Позиционные аргументы"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "位置参数"
+          }
+        }
+      }
+    },
+    "basic.section.static": {
+      "comment": "基础文本页分组标题",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نص ثابت"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statischer Text"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Static Text"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "静的テキスト"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Статический текст"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "静态文本"
+          }
+        }
+      }
+    },
+    "basic.welcome": {
+      "comment": "欢迎语。%1$@ = 用户名，%2$@ = 城市名。不同语言参数顺序不同",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مرحبًا بك في %2$@ يا %1$@!"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Willkommen in %2$@, %1$@!"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome to %2$@, %1$@!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$@へようこそ、%1$@さん！"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добро пожаловать в %2$@, %1$@!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@，欢迎来到%2$@！"
+          }
+        }
+      }
+    },
+    "bidi.copy.clean": {
+      "comment": "清理方向控制符后的字符数",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطول بعد التنظيف"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bereinigte Länge"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cleaned Length"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "除去後の文字数"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Длина после очистки"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清理后字符数"
+          }
+        }
+      }
+    },
+    "bidi.copy.raw": {
+      "comment": "含方向控制符的字符数",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطول الأصلي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rohlänge"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raw Length"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "元の文字数"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Исходная длина"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原始字符数"
+          }
+        }
+      }
+    },
+    "bidi.footer.copy": {
+      "comment": "复制与提交说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "محارف العزل غير مرئية: أزلها باستخدام removingBidiControls قبل النسخ أو الإرسال إلى الخادم أو مقارنة السلاسل."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isolationszeichen sind unsichtbar: Entferne sie mit removingBidiControls vor dem Kopieren, Senden oder Vergleichen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isolates are invisible characters: strip them with removingBidiControls before copying, sending to a server or comparing strings."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "分離文字は不可視です。コピー、サーバー送信、文字列比較の前に removingBidiControls で除去します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Символы изоляции невидимы: удаляйте их через removingBidiControls перед копированием, отправкой на сервер или сравнением строк."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隔离符是不可见字符：复制、提交服务端、做字符串比较前用 removingBidiControls 清理。"
+          }
+        }
+      }
+    },
+    "bidi.footer.name": {
+      "comment": "用户内容说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اعزل المحتوى غير معروف الاتجاه (الأسماء وعناوين المنتجات) بـ FSI…PDI؛ إذ يُعاد ترتيب النص الذي يبدأ أو ينتهي بمحارف محايدة مثل @ و! و# و+."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isoliere Inhalte mit unbekannter Richtung (Namen, Produkttitel) mit FSI…PDI: Text, der mit neutralen Zeichen wie @, !, # oder + beginnt oder endet, wird sonst umsortiert."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isolate content of unknown direction (names, product titles) with FSI…PDI: text that starts or ends with neutral characters such as @, !, # or + gets reordered."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "方向が不明な内容（名前、商品名）は FSI…PDI で分離します。@、!、#、+ などの中立文字で始まる・終わる内容は並べ替えられてしまいます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изолируйте текст неизвестного направления (имена, названия товаров) с помощью FSI…PDI: текст, начинающийся или заканчивающийся нейтральными символами (@, !, #, +), переставляется."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "插入方向未知的内容（昵称、商品名）时用 FSI…PDI 隔离：以 @、!、#、+ 等中性字符开头或结尾的内容会被重新排序。"
+          }
+        }
+      }
+    },
+    "bidi.footer.phone": {
+      "comment": "电话号码说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غلّف أرقام الهواتف والرموز بـ LRI…PDI لفرض الاتجاه من اليسار إلى اليمين، وإلا انتقلت علامة + والفواصل إلى الجهة الأخرى."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telefonnummern und Codes mit LRI…PDI umschließen, sonst springen „+“ und Trennzeichen auf die andere Seite."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrap phone numbers and codes in LRI…PDI to force left-to-right, otherwise “+” and separators jump to the other side."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "電話番号やコードは LRI…PDI で囲んで左から右に固定します。そうしないと「+」や区切り文字が反対側に移動します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оборачивайте телефоны и коды в LRI…PDI, иначе «+» и разделители переедут на другую сторону."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "手机号、验证码等需用 LRI…PDI 强制从左到右，否则「+」和分隔符会跑到另一侧。"
+          }
+        }
+      }
+    },
+    "bidi.intro": {
+      "comment": "双向文本页说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تستخدم هذه الأمثلة النص العربي دائمًا لتتمكن من ملاحظة المشكلات بأي لغة واجهة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Beispiele verwenden immer arabischen Text, damit du die Probleme in jeder Sprache siehst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "These samples always use Arabic text so you can see the issues in any UI language."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "これらの例は常にアラビア語のテキストを使うため、どの表示言語でも問題を確認できます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В примерах всегда используется арабский текст, чтобы проблемы были видны при любом языке интерфейса."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以下示例固定使用阿拉伯语文本，在任何界面语言下都能观察到问题。"
+          }
+        }
+      }
+    },
+    "bidi.liked": {
+      "comment": "某用户赞了你的照片。%@ = 用户昵称（可能是任意语言）",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أعجب %@ بصورتك"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ gefällt dein Foto"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ liked your photo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ さんがあなたの写真に「いいね」しました"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ нравится ваше фото"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 赞了你的照片"
+          }
+        }
+      }
+    },
+    "bidi.section.copy": {
+      "comment": "分组标题：复制与提交",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "النسخ والإرسال"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieren und Senden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy & Submit"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コピーと送信"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копирование и отправка"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "复制与提交"
+          }
+        }
+      }
+    },
+    "bidi.section.current": {
+      "comment": "分组标题：当前语言",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اللغة الحالية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuelle Sprache"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current Language"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在の言語"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Текущий язык"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当前语言"
+          }
+        }
+      }
+    },
+    "bidi.section.name": {
+      "comment": "分组标题：插入用户内容",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إدراج محتوى المستخدم"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eingefügte Nutzerinhalte"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inserted User Content"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ユーザーコンテンツの挿入"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вставка пользовательского текста"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "插入用户内容"
+          }
+        }
+      }
+    },
+    "bidi.section.phone": {
+      "comment": "分组标题：电话号码",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أرقام الهواتف"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telefonnummern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phone Numbers"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "電話番号"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Номера телефонов"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "电话号码"
+          }
+        }
+      }
+    },
+    "bidi.section.tags": {
+      "comment": "分组标题：话题标签与版本号",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوسوم والإصدارات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hashtags und Versionen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hashtags & Versions"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ハッシュタグとバージョン"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Хештеги и версии"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "话题标签与版本号"
+          }
+        }
+      }
+    },
     "catalog.section.layout": {
       "comment": "目录分组标题",
       "extractionState": "manual",
@@ -211,44 +1429,86 @@
         }
       }
     },
-    "common.comingSoon": {
-      "comment": "功能尚未实现时的占位文案",
+    "common.right": {
+      "comment": "对比示例标签：推荐做法",
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "قريبًا"
+            "value": "افعل"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Demnächst verfügbar"
+            "value": "Richtig"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Coming Soon"
+            "value": "Do"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "近日公開"
+            "value": "良い例"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Скоро"
+            "value": "Правильно"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "即将推出"
+            "value": "推荐做法"
+          }
+        }
+      }
+    },
+    "common.wrong": {
+      "comment": "对比示例标签：错误做法",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجنّب"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falsch"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "悪い例"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Неправильно"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "错误示例"
           }
         }
       }
@@ -1177,6 +2437,3606 @@
         }
       }
     },
+    "fmt.date.calendar": {
+      "comment": "当前 locale 使用的日历",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التقويم"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalender"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendar"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暦"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Календарь"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日历"
+          }
+        }
+      }
+    },
+    "fmt.date.footer": {
+      "comment": "日期格式说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يعتمد ترتيب الحقول وأسماء الأشهر ونظام ١٢/٢٤ ساعة والتقويم على الإعدادات المحلية. تستخدم السعودية التقويم الهجري افتراضيًا."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feldreihenfolge, Monatsnamen, 12/24-Stunden-Format und Kalender hängen vom Gebietsschema ab. In Saudi-Arabien ist der islamische Kalender Standard."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Field order, month names, 12/24-hour clock and calendar all depend on the locale. Saudi Arabia uses the Islamic calendar by default."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "項目の順序、月名、12/24 時間制、暦はすべてロケールで決まります。サウジアラビアではイスラム暦が既定です。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Порядок полей, названия месяцев, 12/24-часовой формат и календарь зависят от локали. В Саудовской Аравии по умолчанию используется исламский календарь."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "字段顺序、月份名称、12/24 小时制、历法都由 locale 决定。沙特阿拉伯地区默认使用伊斯兰历。"
+          }
+        }
+      }
+    },
+    "fmt.date.full": {
+      "comment": "完整日期",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التاريخ الكامل"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vollständiges Datum"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Full Date"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完全な日付"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Полная дата"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完整日期"
+          }
+        }
+      }
+    },
+    "fmt.date.relative": {
+      "comment": "相对时间",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوقت النسبي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Relative Zeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Relative Time"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相対時間"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Относительное время"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相对时间"
+          }
+        }
+      }
+    },
+    "fmt.date.template": {
+      "comment": "按模板 yMMMd 格式化的日期",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "القالب yMMMd"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorlage yMMMd"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Template yMMMd"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "テンプレート yMMMd"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Шаблон yMMMd"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "模板 yMMMd"
+          }
+        }
+      }
+    },
+    "fmt.date.time": {
+      "comment": "时间",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوقت"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uhrzeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "時刻"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Время"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "时间"
+          }
+        }
+      }
+    },
+    "fmt.number.decimal": {
+      "comment": "数字",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رقم"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zahl"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Number"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数値"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Число"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数字"
+          }
+        }
+      }
+    },
+    "fmt.number.eur": {
+      "comment": "货币：欧元",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يورو"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Euro"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Euro"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ユーロ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Евро"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "欧元"
+          }
+        }
+      }
+    },
+    "fmt.number.footer": {
+      "comment": "货币说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تأتي العملة من بياناتك وليس من اللغة؛ أما موضع الرمز والكسور والفواصل فتحددها الإعدادات المحلية."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Währung stammt aus deinen Daten, nicht aus der Sprache; Symbolposition, Dezimalstellen und Trennzeichen bestimmt das Gebietsschema."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The currency comes from your data, not the language; symbol position, decimals and separators come from the locale."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通貨は言語ではなくデータで決まります。記号の位置、小数桁、区切り文字はロケールで決まります。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Валюта берётся из данных, а не из языка; положение символа, количество знаков и разделители определяет локаль."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "币种来自业务数据，不随语言变化；符号位置、小数位数和分隔符由 locale 决定。"
+          }
+        }
+      }
+    },
+    "fmt.number.jpy": {
+      "comment": "货币：日元",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ين ياباني (بلا كسور)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Japanischer Yen (ohne Dezimalstellen)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Japanese Yen (no decimals)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日本円（小数なし）"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Японская иена (без дробной части)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日元（无小数）"
+          }
+        }
+      }
+    },
+    "fmt.number.percent": {
+      "comment": "百分比",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نسبة مئوية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prozent"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Percent"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パーセント"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проценты"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百分比"
+          }
+        }
+      }
+    },
+    "fmt.number.usd": {
+      "comment": "货币：美元",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "دولار أمريكي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "US-Dollar"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "US Dollar"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "米ドル"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доллар США"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "美元"
+          }
+        }
+      }
+    },
+    "fmt.pitfalls.footer": {
+      "comment": "格式化常见错误说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا تتبع Locale.current التبديل داخل التطبيق. استخدم دائمًا الإعدادات المحلية للتطبيق والقوالب بدلًا من dateFormat ثابت."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Locale.current folgt dem Sprachwechsel in der App nicht. Formatiere immer mit dem Gebietsschema der App und verwende Vorlagen statt eines festen dateFormat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Locale.current does not follow in-app switching. Always format with the app's locale and use templates instead of a fixed dateFormat."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Locale.current はアプリ内の切り替えに追従しません。常にアプリのロケールで書式設定し、固定の dateFormat ではなくテンプレートを使います。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Locale.current не меняется при переключении в приложении. Форматируйте с локалью приложения и используйте шаблоны вместо фиксированного dateFormat."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Locale.current 不随 App 内切换变化；展示时必须使用 App 当前 locale，并用模板代替写死的 dateFormat。"
+          }
+        }
+      }
+    },
+    "fmt.section.date": {
+      "comment": "格式化页分组标题",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التواريخ والأوقات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datum und Uhrzeit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dates & Times"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日付と時刻"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дата и время"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日期与时间"
+          }
+        }
+      }
+    },
+    "fmt.section.number": {
+      "comment": "分组标题：数字与货币",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأرقام والعملات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zahlen und Währungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numbers & Currency"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数値と通貨"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Числа и валюта"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数字与货币"
+          }
+        }
+      }
+    },
+    "fmt.section.pitfalls": {
+      "comment": "分组标题：常见错误",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أخطاء شائعة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Häufige Fehler"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Common Mistakes"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "よくある間違い"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Частые ошибки"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "常见错误"
+          }
+        }
+      }
+    },
+    "fmt.section.units": {
+      "comment": "分组标题：单位与列表",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوحدات والقوائم"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einheiten und Listen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Units & Lists"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "単位とリスト"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Единицы и списки"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "单位与列表"
+          }
+        }
+      }
+    },
+    "fmt.units.bytes": {
+      "comment": "文件大小",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حجم الملف"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dateigröße"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File Size"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ファイルサイズ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Размер файла"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文件大小"
+          }
+        }
+      }
+    },
+    "fmt.units.distance": {
+      "comment": "距离",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المسافة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entfernung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distance"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "距離"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расстояние"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "距离"
+          }
+        }
+      }
+    },
+    "fmt.units.footer": {
+      "comment": "单位说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتحول الوحدات تلقائيًا بحسب المنطقة، وتختلف أدوات الربط في القوائم بحسب اللغة، فلا تدمجها بالفواصل."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einheiten werden je nach Region umgerechnet (in den USA Meilen und °F). Auch Listenverknüpfungen sind sprachabhängig – nie einfach mit Kommas verbinden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Units convert automatically by region (miles and °F in the US). List conjunctions also vary by language, so never join with commas."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "単位は地域に応じて自動変換されます（米国ではマイルと華氏）。リストの接続詞も言語ごとに異なるため、カンマで連結しないでください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Единицы пересчитываются по региону (в США — мили и °F). Союзы в списках тоже зависят от языка, поэтому не соединяйте элементы запятыми."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "度量单位按地区自动换算（如美国显示英里与华氏度）；列表连接词也因语言而异，不要用逗号拼接。"
+          }
+        }
+      }
+    },
+    "fmt.units.list": {
+      "comment": "列表格式化",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قائمة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "List"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リスト"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Список"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "列表"
+          }
+        }
+      }
+    },
+    "fmt.units.temperature": {
+      "comment": "温度",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "درجة الحرارة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temperatur"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temperature"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "気温"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Температура"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "温度"
+          }
+        }
+      }
+    },
+    "images.direction.footer": {
+      "comment": "方向性图片说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اضبط Direction على Left to Right في الأصل لينقلب تلقائيًا، واستخدم imageFlippedForRightToLeftLayoutDirection() للصور المُنشأة أثناء التشغيل."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Setze im Asset Direction auf „Left to Right“, dann wird es bei RTL gespiegelt. Für zur Laufzeit erzeugte Bilder imageFlippedForRightToLeftLayoutDirection() verwenden (SwiftUI: flipsForRightToLeftLayoutDirection)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set Direction to Left to Right in the asset and it flips in RTL. For images created at runtime, use imageFlippedForRightToLeftLayoutDirection() (SwiftUI: flipsForRightToLeftLayoutDirection)."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アセットの Direction を Left to Right にすると RTL で自動的に反転します。実行時に生成した画像には imageFlippedForRightToLeftLayoutDirection()（SwiftUI：flipsForRightToLeftLayoutDirection）を使います。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Задайте в ассете Direction = Left to Right — в RTL изображение отразится. Для изображений, созданных во время работы, используйте imageFlippedForRightToLeftLayoutDirection() (SwiftUI: flipsForRightToLeftLayoutDirection)."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 Asset 中把 Direction 设为 Left to Right，RTL 下会自动翻转；运行时生成的图片用 imageFlippedForRightToLeftLayoutDirection()（SwiftUI：flipsForRightToLeftLayoutDirection）。"
+          }
+        }
+      }
+    },
+    "images.localized.footer": {
+      "comment": "本地化图片说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قدّم نسخًا لكل لغة من الصور التي تحتوي على نص، ووسم كل لغة صراحةً بما فيها لغة التطوير، وإلا عادت إلى الإنجليزية."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stelle für Bilder mit Text sprachspezifische Varianten bereit (Asset Catalog → Localize) und kennzeichne jede Sprache explizit, auch die Entwicklungssprache – sonst wird Englisch verwendet."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Provide per-language variants for images with text (Asset Catalog → Localize) and tag every language explicitly, including the development language, or it falls back to English."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文字を含む画像は言語ごとに用意し（Asset Catalog → Localize）、開発言語も含めてすべて明示的に指定します。指定しないと英語にフォールバックします。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для изображений с текстом создавайте варианты для каждого языка (Asset Catalog → Localize) и явно помечайте все языки, включая язык разработки, иначе будет использован английский."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "包含文字的图片要按语言提供变体（Asset Catalog → Localize），并为每种语言（包括开发语言）显式标注，否则会回退到英文。"
+          }
+        }
+      }
+    },
+    "images.section.direction": {
+      "comment": "分组标题：方向性图片",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الصور الاتجاهية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Richtungsabhängige Bilder"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Directional Images"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "方向性のある画像"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Направленные изображения"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "方向性图片"
+          }
+        }
+      }
+    },
+    "images.section.localized": {
+      "comment": "图片页分组标题",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صور تحتوي على نص"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bilder mit Text"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Images with Text"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文字を含む画像"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изображения с текстом"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "包含文字的图片"
+          }
+        }
+      }
+    },
+    "input.alignment.footer": {
+      "comment": "文本对齐说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخدم المحاذاة ‎.natural‎ لحقول النص لتتبع اتجاه التخطيط، ولا تثبّت ‎.left‎."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwende für Textfelder die Ausrichtung .natural, damit sie der Layoutrichtung folgen – nie fest .left."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use .natural alignment for text fields so they follow the layout direction; never hard-code .left."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "テキストフィールドは .natural で配置し、レイアウト方向に従わせます。.left を固定しないでください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Используйте для полей ввода выравнивание .natural, чтобы оно следовало направлению макета; не задавайте .left жёстко."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "输入框使用 .natural 对齐，跟随布局方向；不要写死 .left。"
+          }
+        }
+      }
+    },
+    "input.name.placeholder": {
+      "comment": "姓名输入框占位符",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسمك"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Name"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your Name"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "お名前"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваше имя"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的姓名"
+          }
+        }
+      }
+    },
+    "input.parsing.footer": {
+      "comment": "数字解析说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قد يكتب المستخدمون أرقامًا مثل ١٢٣٫٥ لا يستطيع Double(_:) تحليلها؛ استخدم NumberFormatter بالإعدادات المحلية المناسبة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arabische Nutzer geben evtl. Ziffern wie ١٢٣٫٥ ein, die Double(_:) nicht parsen kann. Verwende einen NumberFormatter mit passendem Gebietsschema."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arabic users may type digits like ١٢٣٫٥, which Double(_:) can’t parse. Use a NumberFormatter with the matching locale."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アラビア語のユーザーは ١٢٣٫٥ のような数字を入力することがあり、Double(_:) では解析できません。対応するロケールの NumberFormatter を使います。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пользователи могут вводить арабские цифры вроде ١٢٣٫٥, которые Double(_:) не распознаёт. Используйте NumberFormatter с нужной локалью."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "阿拉伯语用户可能输入 ١٢٣٫٥ 这样的数字，Double(_:) 无法解析，需用对应 locale 的 NumberFormatter。"
+          }
+        }
+      }
+    },
+    "input.parsing.input": {
+      "comment": "用户输入的原始内容",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإدخال"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eingabe"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Input"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "入力"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ввод"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "输入内容"
+          }
+        }
+      }
+    },
+    "input.phone.footer": {
+      "comment": "手机号与验证码说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تُكتب أرقام الهواتف والرموز والبريد الإلكتروني والمبالغ دائمًا من اليسار إلى اليمين، لذا افرض هذا الاتجاه، ولا تعكس ترتيب خانات الرمز."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telefonnummern, Codes, E-Mail-Adressen und Beträge werden immer von links nach rechts geschrieben – erzwinge LTR; auch die Reihenfolge der Code-Felder darf nicht gespiegelt werden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phone numbers, codes, emails and amounts are always written left-to-right, so force LTR for them; the order of code boxes must not mirror either."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "電話番号、認証コード、メール、金額は常に左から右に書くため LTR に固定します。コード入力欄の順序も反転させてはいけません。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Телефоны, коды, e-mail и суммы всегда пишутся слева направо — принудительно задавайте LTR; порядок ячеек кода тоже не должен отражаться."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "手机号、验证码、邮箱、金额始终从左到右书写，需单独强制 LTR；验证码格子的顺序也不能镜像。"
+          }
+        }
+      }
+    },
+    "input.section.alignment": {
+      "comment": "输入页分组标题",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "محاذاة النص"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Textausrichtung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text Alignment"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "テキストの配置"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выравнивание текста"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文本对齐"
+          }
+        }
+      }
+    },
+    "input.section.parsing": {
+      "comment": "分组标题：数字解析",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحليل الأرقام"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zahlen parsen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Number Parsing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数値の解析"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разбор чисел"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数字解析"
+          }
+        }
+      }
+    },
+    "input.section.phone": {
+      "comment": "分组标题：手机号与验证码",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أرقام الهواتف والرموز"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telefonnummern und Codes"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phone Numbers & Codes"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "電話番号と認証コード"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Телефоны и коды"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "手机号与验证码"
+          }
+        }
+      }
+    },
+    "longtext.button.enable": {
+      "comment": "主要按钮",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تفعيل الآن"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jetzt aktivieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn On Now"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今すぐオンにする"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Включить сейчас"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "立即开启"
+          }
+        }
+      }
+    },
+    "longtext.button.later": {
+      "comment": "次要按钮",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ذكّرني لاحقًا"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Später erinnern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remind Me Later"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "後で通知"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Напомнить позже"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稍后提醒"
+          }
+        }
+      }
+    },
+    "longtext.buttons.footer": {
+      "comment": "按钮布局说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اجعل المحتوى يحدد عرض الأزرار، وبدّل من الأفقي إلى العمودي عند ضيق المساحة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lass den Inhalt die Breite der Schaltflächen bestimmen und wechsle bei Platzmangel von horizontal zu vertikal (SwiftUI: ViewThatFits, UIKit: UIStackView.axis je nach Breite)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let content size the buttons and switch from horizontal to vertical when space runs out (SwiftUI: ViewThatFits, UIKit: switch UIStackView.axis by width)."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ボタン幅は内容で決め、幅が足りないときは横並びから縦並びに切り替えます（SwiftUI：ViewThatFits、UIKit：幅に応じて UIStackView.axis を切り替え）。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пусть ширину кнопок задаёт содержимое, а при нехватке места раскладка переключается с горизонтальной на вертикальную (SwiftUI: ViewThatFits, UIKit: смена UIStackView.axis)."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按钮宽度由内容决定；空间不足时自动从横排切换为竖排（SwiftUI：ViewThatFits，UIKit：按宽度切换 UIStackView.axis）。"
+          }
+        }
+      }
+    },
+    "longtext.compound": {
+      "comment": "示例标题，德语为一个很长的复合词",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعدادات أمان الحساب"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontosicherheitseinstellungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account Security Settings"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アカウントのセキュリティ設定"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Настройки безопасности учётной записи"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "账户安全设置"
+          }
+        }
+      }
+    },
+    "longtext.compound.footer": {
+      "comment": "长复合词说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يمكن تقسيم الكلمات الألمانية المركبة عند المسافات، فيُقتطع السطر الواحد. في UIKit اسمح بعدة أسطر واضبط hyphenationFactor، وفي SwiftUI استخدم minimumScaleFactor."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deutsche Komposita lassen sich nicht an Leerzeichen umbrechen, eine einzelne Zeile wird abgeschnitten. In UIKit mehrere Zeilen erlauben und hyphenationFactor setzen (neuere Systeme trennen Deutsch automatisch, iOS 15/16 brauchen es explizit). In SwiftUI minimumScaleFactor verwenden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "German compounds can’t wrap at spaces, so a single line truncates. In UIKit allow multiple lines and set hyphenationFactor (newer systems hyphenate German by default; iOS 15/16 need it explicitly). In SwiftUI use minimumScaleFactor."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ドイツ語の複合語はスペースで折り返せないため、1 行だと省略されます。UIKit では複数行を許可して hyphenationFactor を設定し（新しいシステムではドイツ語は既定でハイフネーション、iOS 15/16 は明示的な設定が必要）、SwiftUI では minimumScaleFactor を使います。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Немецкие составные слова нельзя перенести по пробелу, и одна строка обрезается. В UIKit разрешите несколько строк и задайте hyphenationFactor (новые системы переносят немецкий автоматически, в iOS 15/16 нужно явно). В SwiftUI используйте minimumScaleFactor."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "德语复合词无法在空格处换行，单行会被截断。UIKit 允许多行并设置 hyphenationFactor（新系统对德语默认断字，iOS 15/16 需显式设置）；SwiftUI 可用 minimumScaleFactor 缩小字号。"
+          }
+        }
+      }
+    },
+    "longtext.sample": {
+      "comment": "示例长句",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "احمِ حسابك باستخدام المصادقة الثنائية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schütze dein Konto mit der Zwei-Faktor-Authentifizierung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Protect your account with two-factor authentication"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 ファクタ認証でアカウントを保護しましょう"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Защитите учётную запись с помощью двухфакторной аутентификации"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通过双重验证保护你的账户安全"
+          }
+        }
+      }
+    },
+    "longtext.section.buttons": {
+      "comment": "分组标题：按钮布局",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تخطيط الأزرار"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schaltflächenlayout"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Button Layout"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ボタンのレイアウト"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расположение кнопок"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按钮布局"
+          }
+        }
+      }
+    },
+    "longtext.section.compound": {
+      "comment": "分组标题：长复合词",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الكلمات المركبة الطويلة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lange Komposita"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Long Compound Words"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "長い複合語"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Длинные составные слова"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "长复合词"
+          }
+        }
+      }
+    },
+    "longtext.section.truncation": {
+      "comment": "长文本页分组标题",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاقتطاع والالتفاف"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abschneiden und Umbruch"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Truncation & Wrapping"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "省略と折り返し"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обрезка и перенос"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "截断与换行"
+          }
+        }
+      }
+    },
+    "longtext.truncation.footer": {
+      "comment": "截断说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا تحدد عرضًا ثابتًا وسطرًا واحدًا للنص؛ فالألمانية والروسية أطول غالبًا من الإنجليزية بنسبة ٣٠٪ أو أكثر."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gib Text keine feste Breite mit nur einer Zeile: Deutsch und Russisch sind oft 30 % länger als Englisch, Chinesisch und Japanisch deutlich kürzer."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don’t give text a fixed width and a single line: German and Russian are often 30%+ longer than English, while Chinese and Japanese are much shorter."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "テキストに固定幅と 1 行制限を付けないでください。ドイツ語やロシア語は英語より 30% 以上長く、中国語や日本語はずっと短くなります。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не задавайте тексту фиксированную ширину и одну строку: немецкий и русский часто на 30% длиннее английского, а китайский и японский — намного короче."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不要给文本固定宽度和单行限制：德语、俄语通常比英语长 30% 以上，中文、日语则短得多。"
+          }
+        }
+      }
+    },
+    "plurals.count.label": {
+      "comment": "步进器标签：数量",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العدد"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anzahl"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Count"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Количество"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数量"
+          }
+        }
+      }
+    },
+    "plurals.files": {
+      "comment": "文件数量",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld ملفات"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld ملفًا"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ملف واحد"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld ملف"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ملفان"
+                }
+              },
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لا توجد ملفات"
+                }
+              }
+            }
+          }
+        },
+        "de": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld Datei"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld Dateien"
+                }
+              },
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Keine Dateien"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld file"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld files"
+                }
+              },
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "No files"
+                }
+              }
+            }
+          }
+        },
+        "ja": {
+          "variations": {
+            "plural": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld 個のファイル"
+                }
+              },
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ファイルはありません"
+                }
+              }
+            }
+          }
+        },
+        "ru": {
+          "variations": {
+            "plural": {
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld файла"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld файлов"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld файл"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld файла"
+                }
+              },
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Нет файлов"
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans": {
+          "variations": {
+            "plural": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld 个文件"
+                }
+              },
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "没有文件"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "plurals.files.label": {
+      "comment": "步进器标签：文件",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الملفات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dateien"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Files"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ファイル"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Файлы"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文件"
+          }
+        }
+      }
+    },
+    "plurals.folders.label": {
+      "comment": "步进器标签：文件夹",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المجلدات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordner"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Folders"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フォルダ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Папки"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文件夹"
+          }
+        }
+      }
+    },
+    "plurals.multi.footer": {
+      "comment": "多变量复数说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عندما تحتوي الجملة على عدة أعداد، استخدم Vary by Plural لكل متغير في String Catalog."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enthält ein Satz mehrere Anzahlen, nutze im String Catalog „Vary by Plural“ für jede Variable. Im Chinesischen und Japanischen ist die Argumentreihenfolge anders."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When a sentence contains several counts, use “Vary by Plural” for each variable in the String Catalog. Note that argument order differs in Chinese and Japanese."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 つの文に複数の数がある場合は、String Catalog で変数ごとに「Vary by Plural」を使います。中国語と日本語では引数の順序が英語と異なります。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если в предложении несколько чисел, используйте «Vary by Plural» для каждой переменной в String Catalog. В китайском и японском порядок аргументов другой."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一句话含多个数量时，在 String Catalog 中对每个变量分别「Vary by Plural」。注意中文、日语的参数顺序与英语不同。"
+          }
+        }
+      }
+    },
+    "plurals.section.multi": {
+      "comment": "分组标题：多个变量",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متغيرات متعددة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehrere Variablen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiple Variables"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複数の変数"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Несколько переменных"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "多个变量"
+          }
+        }
+      }
+    },
+    "plurals.section.single": {
+      "comment": "复数页分组标题",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عدد واحد"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einzelne Anzahl"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Single Count"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "単一の数"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Одно число"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "单个数量"
+          }
+        }
+      }
+    },
+    "plurals.section.table": {
+      "comment": "分组标题：复数类别一览",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فئات الجمع"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pluralkategorien"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plural Categories"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複数形のカテゴリ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Категории множественного числа"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "复数类别一览"
+          }
+        }
+      }
+    },
+    "plurals.single.footer": {
+      "comment": "单个数量说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد صيغ جمع في الصينية واليابانية، لكن يمكنك تخصيص حالة الصفر؛ إذ تدعم Apple الحالة zero في جميع اللغات."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chinesisch und Japanisch kennen keine Pluralformen, aber den Fall „zero“ kannst du trotzdem anpassen – Apple unterstützt ihn in jeder Sprache."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chinese and Japanese have no plural forms, but you can still customize zero: Apple supports the zero case in every language."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "中国語と日本語には複数形がありませんが、zero は個別に設定できます。Apple はすべての言語で zero をサポートします。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В китайском и японском нет форм множественного числа, но вариант zero можно задать отдельно — Apple поддерживает его для всех языков."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "中文、日语没有复数变化，但可以单独为 0 配置 zero 文案：Apple 对所有语言都支持 zero。"
+          }
+        }
+      }
+    },
+    "plurals.summary": {
+      "comment": "文件与文件夹数量。%1$lld = 文件数，%2$lld = 文件夹数，两者各自有复数规则",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@files@ في %#@folders@"
+          },
+          "substitutions": {
+            "files": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "few": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg ملفات"
+                    }
+                  },
+                  "many": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg ملفًا"
+                    }
+                  },
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "ملف واحد"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg ملف"
+                    }
+                  },
+                  "two": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "ملفان"
+                    }
+                  },
+                  "zero": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg ملف"
+                    }
+                  }
+                }
+              }
+            },
+            "folders": {
+              "argNum": 2,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "few": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg مجلدات"
+                    }
+                  },
+                  "many": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg مجلدًا"
+                    }
+                  },
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "مجلد واحد"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg مجلد"
+                    }
+                  },
+                  "two": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "مجلدين"
+                    }
+                  },
+                  "zero": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg مجلد"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@files@ in %#@folders@"
+          },
+          "substitutions": {
+            "files": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Datei"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Dateien"
+                    }
+                  }
+                }
+              }
+            },
+            "folders": {
+              "argNum": 2,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Ordner"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg Ordnern"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@files@ in %#@folders@"
+          },
+          "substitutions": {
+            "files": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg file"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg files"
+                    }
+                  }
+                }
+              }
+            },
+            "folders": {
+              "argNum": 2,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg folder"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg folders"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$lld 個のフォルダに %1$lld 個のファイル"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@files@ в %#@folders@"
+          },
+          "substitutions": {
+            "files": {
+              "argNum": 1,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "few": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg файла"
+                    }
+                  },
+                  "many": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg файлов"
+                    }
+                  },
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg файл"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg файла"
+                    }
+                  }
+                }
+              }
+            },
+            "folders": {
+              "argNum": 2,
+              "formatSpecifier": "lld",
+              "variations": {
+                "plural": {
+                  "few": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg папках"
+                    }
+                  },
+                  "many": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg папках"
+                    }
+                  },
+                  "one": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg папке"
+                    }
+                  },
+                  "other": {
+                    "stringUnit": {
+                      "state": "translated",
+                      "value": "%arg папки"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$lld 个文件夹中共有 %1$lld 个文件"
+          }
+        }
+      }
+    },
+    "plurals.table.footer": {
+      "comment": "复数类别说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تقع الأرقام نفسها في فئات مختلفة بحسب اللغة: في العربية ٣–١٠ من فئة few، و١١–٩٩ من فئة many؛ وفي الروسية ١ و٢١ من فئة one."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dieselben Zahlen fallen je nach Sprache in andere Kategorien: Im Russischen sind 1 und 21 „one“, 2–4 und 22 „few“, 5–20 „many“; im Arabischen sind 3–10 „few“ und 11–99 „many“."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The same numbers hit different categories per language: in Russian 1 and 21 are “one”, 2–4 and 22 are “few”, 5–20 are “many”; in Arabic 3–10 are “few” and 11–99 are “many”."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同じ数でも言語によってカテゴリが異なります。ロシア語では 1・21 が one、2〜4・22 が few、5〜20 が many。アラビア語では 3〜10 が few、11〜99 が many です。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Одни и те же числа попадают в разные категории: в русском 1 и 21 — one, 2–4 и 22 — few, 5–20 — many; в арабском 3–10 — few, 11–99 — many."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同样的数字在不同语言命中不同类别：俄语 1、21 为 one，2–4、22 为 few，5–20 为 many；阿拉伯语 3–10 为 few，11–99 为 many。"
+          }
+        }
+      }
+    },
+    "rtl.animation.footer": {
+      "comment": "动画方向说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا تنعكس الإزاحات الأفقية في CGAffineTransform وCALayer تلقائيًا؛ اعكس الإشارة بحسب اتجاه التخطيط للتحرك «للأمام»."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Horizontale Verschiebungen in CGAffineTransform und CALayer werden nicht gespiegelt. Kehre das Vorzeichen je nach Layoutrichtung um."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Horizontal offsets in CGAffineTransform and CALayer are not mirrored. Flip the sign based on layout direction to move “forward”."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CGAffineTransform や CALayer の水平移動は反転されません。「前へ」動かすにはレイアウト方向に応じて符号を反転します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Горизонтальные смещения в CGAffineTransform и CALayer не отражаются. Меняйте знак в зависимости от направления макета."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CGAffineTransform、CALayer 的水平位移不会自动镜像，「向前」移动需根据布局方向取反。"
+          }
+        }
+      }
+    },
+    "rtl.animation.play": {
+      "comment": "按钮：播放动画",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تشغيل الحركة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Animation abspielen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play Animation"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アニメーションを再生"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запустить анимацию"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "播放动画"
+          }
+        }
+      }
+    },
+    "rtl.auto.footer": {
+      "comment": "自动镜像说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تنعكس التخطيطات المعتمدة على leading/trailing وأشرطة التقدّم والمنزلقات تلقائيًا. في القوائم الأفقية يبدأ ScrollView في SwiftUI من اليمين، أما UIScrollView وUICollectionView في UIKit فتعكسان المحتوى فقط، لذا مرّر إلى الحافة البادئة بنفسك."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layouts mit leading/trailing, Fortschrittsbalken und Schieberegler werden automatisch gespiegelt. Horizontale Listen: SwiftUIs ScrollView beginnt rechts, UIKits UIScrollView und UICollectionView spiegeln nur den Inhalt – scrolle selbst zum Anfang."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leading/trailing layouts, progress bars and sliders mirror automatically. For horizontal lists, SwiftUI’s ScrollView starts on the right, but UIKit’s UIScrollView and UICollectionView only mirror their content: scroll to the leading edge yourself."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "leading/trailing を使ったレイアウト、プログレスバー、スライダーは自動的に反転します。横スクロールリストは、SwiftUI の ScrollView は右から始まりますが、UIKit の UIScrollView / UICollectionView は内容が反転するだけなので、先頭側へのスクロールを自分で行います。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Макеты на leading/trailing, индикаторы прогресса и слайдеры отражаются автоматически. В горизонтальных списках ScrollView в SwiftUI начинается справа, а UIScrollView и UICollectionView в UIKit лишь отражают содержимое — прокрутите к начальному краю сами."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "基于 leading/trailing 的布局、进度条、滑块会自动镜像。横向列表：SwiftUI 的 ScrollView 自动从右侧开始；UIKit 的 UIScrollView / UICollectionView 内容会镜像，但初始位置需手动滚到起始边。"
+          }
+        }
+      }
+    },
+    "rtl.forced.footer": {
+      "comment": "强制 LTR 说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تبقى عناصر تشغيل الوسائط والخطوط الزمنية ومحاور الرسوم البيانية من اليسار إلى اليمين لأنها تمثل اتجاهًا فعليًا."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mediensteuerung, Zeitleisten und Diagrammachsen stellen eine physische Richtung dar und bleiben links nach rechts (UIKit: .playback, SwiftUI: layoutDirection)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Media controls, timelines and chart axes represent physical direction and stay left-to-right (UIKit: .playback, SwiftUI: layoutDirection)."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "メディア操作、タイムライン、グラフの軸は物理的な方向を表すため左から右のままにします（UIKit：.playback、SwiftUI：layoutDirection）。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Элементы управления медиа, шкалы времени и оси графиков отражают физическое направление и остаются слева направо (UIKit: .playback, SwiftUI: layoutDirection)."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "媒体播放控件、时间轴、图表坐标轴等表示物理方向的内容保持从左到右（UIKit：.playback，SwiftUI：layoutDirection）。"
+          }
+        }
+      }
+    },
+    "rtl.icons.footer": {
+      "comment": "图标方向说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يجب أن تنعكس الأيقونات التي تعني التقدّم أو الرجوع، بينما لا تنعكس أيقونات التشغيل والعلامة والساعة والشعارات. لا تستخدم arrow.right للتنقّل لأنه لا ينعكس."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Symbole für vor/zurück müssen gespiegelt werden (chevron.forward, arrow.forward, eigene Bilder mit gesetzter Direction). Wiedergabe, Häkchen, Uhr und Logos nicht. arrow.right wird nie gespiegelt – nicht für Navigation verwenden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Icons that mean forward/back must mirror (chevron.forward, arrow.forward, custom images with Direction set). Play, checkmark, clock and logos don’t. arrow.right never mirrors, so don’t use it for navigation."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "進む/戻るを表すアイコンは反転させます（chevron.forward、arrow.forward、Direction を設定した画像）。再生、チェック、時計、ロゴは反転しません。arrow.right は反転しないため、ナビゲーションには使いません。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Значки «вперёд/назад» должны отражаться (chevron.forward, arrow.forward, свои изображения с заданным Direction). Воспроизведение, галочка, часы и логотипы — нет. arrow.right не отражается, не используйте его для навигации."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "表示前进/后退的图标要镜像（chevron.forward、arrow.forward、设置了 Direction 的自定义图片）；播放键、对勾、时钟、Logo 不镜像。arrow.right 方向固定，不要用于导航。"
+          }
+        }
+      }
+    },
+    "rtl.icons.keep": {
+      "comment": "不应镜像的图标",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا تنعكس"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht gespiegelt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not Mirrored"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "反転しない"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не отражаются"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保持不变"
+          }
+        }
+      }
+    },
+    "rtl.icons.mirror": {
+      "comment": "应随方向镜像的图标",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تنعكس"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gespiegelt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mirrored"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "反転する"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отражаются"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "随方向镜像"
+          }
+        }
+      }
+    },
+    "rtl.progress": {
+      "comment": "进度条标题",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تقدّم التنزيل"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download-Fortschritt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download Progress"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダウンロードの進行状況"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ход загрузки"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载进度"
+          }
+        }
+      }
+    },
+    "rtl.row.title": {
+      "comment": "示例设置行标题",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإشعارات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mitteilungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уведомления"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知"
+          }
+        }
+      }
+    },
+    "rtl.row.value": {
+      "comment": "示例设置行的值",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مفعّلة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オン"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вкл."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已开启"
+          }
+        }
+      }
+    },
+    "rtl.section.animation": {
+      "comment": "分组标题：动画方向",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اتجاه الحركة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Animationsrichtung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Animation Direction"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アニメーションの方向"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Направление анимации"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "动画方向"
+          }
+        }
+      }
+    },
+    "rtl.section.auto": {
+      "comment": "RTL 页分组标题",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الانعكاس التلقائي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatische Spiegelung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatic Mirroring"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動ミラーリング"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматическое отражение"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自动镜像"
+          }
+        }
+      }
+    },
+    "rtl.section.forced": {
+      "comment": "分组标题：强制从左到右",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فرض الاتجاه من اليسار إلى اليمين"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fest von links nach rechts"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forced Left-to-Right"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "左から右に固定"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Принудительно слева направо"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "强制从左到右"
+          }
+        }
+      }
+    },
+    "rtl.section.icons": {
+      "comment": "分组标题：图标方向",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اتجاه الأيقونات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Symbolrichtung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Icon Direction"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アイコンの向き"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Направление значков"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "图标方向"
+          }
+        }
+      }
+    },
+    "server.cache.footer": {
+      "comment": "缓存说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يجب أن تتضمن مفاتيح التخزين المؤقت اللغة، وإلا استمر عرض محتوى اللغة السابقة. افتح هذه الصفحة ثم بدّل اللغة وعد للمقارنة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cache-Schlüssel müssen die Sprache enthalten, sonst bleibt nach einem Wechsel der alte Inhalt sichtbar. Öffne diese Seite, wechsle die Sprache und vergleiche danach."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cache keys must include the language, or old-language content keeps showing after a switch. Open this page, switch languages, then come back to compare."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャッシュのキーには言語を含める必要があります。含めないと切り替え後も古い言語の内容が表示されます。このページを開いてから言語を切り替え、戻って比較してください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ключ кэша должен содержать язык, иначе после переключения останется старый контент. Откройте эту страницу, смените язык и вернитесь, чтобы сравнить."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "缓存 key 必须包含语言，否则切换语言后仍显示旧语言的内容。先打开本页，再切换语言回来对比。"
+          }
+        }
+      }
+    },
+    "server.header.footer": {
+      "comment": "请求头说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يرسل URLSession الترويسة Accept-Language بحسب لغة النظام ولا يعرف بالتبديل داخل التطبيق، لذا اضبطها بنفسك."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URLSession sendet Accept-Language anhand der Systemsprache und kennt den Wechsel in der App nicht – setze den Header selbst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URLSession sends Accept-Language based on the system language and doesn’t know about in-app switching, so set it yourself."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URLSession はシステム言語に基づいて Accept-Language を送信し、アプリ内の切り替えを認識しないため、自分で設定します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URLSession отправляет Accept-Language по языку системы и не знает о переключении в приложении — задавайте его сами."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "URLSession 默认按系统语言发送 Accept-Language，不会感知 App 内切换，需要手动设置。"
+          }
+        }
+      }
+    },
+    "server.loading": {
+      "comment": "加载中提示",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ التحميل…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird geladen …"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loading…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "読み込み中…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Загрузка…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加载中…"
+          }
+        }
+      }
+    },
+    "server.published": {
+      "comment": "文章发布时间",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تاريخ النشر"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veröffentlicht"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Published"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "公開日時"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Опубликовано"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发布时间"
+          }
+        }
+      }
+    },
+    "server.response.footer": {
+      "comment": "服务端返回说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يعيد الخادم المحتوى باللغة المطلوبة. تُرسَل الأوقات بصيغة ISO 8601 وتُحلَّل بمنسق POSIX ثم تُعرض باللغة الحالية."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Server liefert Inhalte in der angefragten Sprache. Zeiten werden als ISO 8601 übertragen, mit einem POSIX-Formatter geparst und in der aktuellen Sprache angezeigt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The server returns content for the requested language. Times travel as ISO 8601, are parsed with a POSIX formatter, then displayed in the current language."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバーはリクエストされた言語のコンテンツを返します。時刻は ISO 8601 で送られ、POSIX 形式で解析した後、現在の言語で表示します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сервер возвращает контент на запрошенном языке. Время передаётся в ISO 8601, разбирается POSIX-форматтером и показывается на текущем языке."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "服务端按请求头返回对应语言的内容；时间以 ISO 8601 传输，用 POSIX 格式解析，再按当前语言展示。"
+          }
+        }
+      }
+    },
+    "server.section.cache": {
+      "comment": "分组标题：缓存",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التخزين المؤقت"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cache"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cache"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャッシュ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кэш"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "缓存"
+          }
+        }
+      }
+    },
+    "server.section.header": {
+      "comment": "服务端页分组标题",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترويسة الطلب"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Request-Header"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Request Header"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リクエストヘッダー"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заголовок запроса"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请求头"
+          }
+        }
+      }
+    },
+    "server.section.response": {
+      "comment": "分组标题：服务端返回",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استجابة الخادم"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serverantwort"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server Response"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバーの応答"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ответ сервера"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "服务端返回"
+          }
+        }
+      }
+    },
     "settings.direction.ltr": {
       "comment": "布局方向：从左到右",
       "extractionState": "manual",
@@ -1639,6 +6499,636 @@
         }
       }
     },
+    "sys.appName.base": {
+      "comment": "Info.plist 中的基础值",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "القيمة الأساسية في Info.plist"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basiswert in Info.plist"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Info.plist Base Value"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Info.plist の基本値"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Базовое значение Info.plist"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Info.plist 基础值"
+          }
+        }
+      }
+    },
+    "sys.appName.current": {
+      "comment": "按 App 当前语言读取的名称",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لغة التطبيق الحالية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuelle App-Sprache"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current App Language"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在のアプリの言語"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Текущий язык приложения"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当前 App 语言"
+          }
+        }
+      }
+    },
+    "sys.appName.footer": {
+      "comment": "App 名称说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتبع الاسم على الشاشة الرئيسية إعدادات لغة النظام ولا يتغير بالتبديل داخل التطبيق. لعرض الاسم داخل التطبيق، اقرأه من جدول InfoPlist."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Name auf dem Home-Bildschirm folgt den Spracheinstellungen des Systems; ein Wechsel in der App ändert ihn nicht. Für die Anzeige in der App den Wert der aktuellen Sprache aus der InfoPlist-Tabelle lesen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Home Screen name follows the system language settings; in-app switching doesn’t change it. To show the name inside the app, read the current language from the InfoPlist table."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ホーム画面の名前はシステムの言語設定に従い、アプリ内の切り替えでは変わりません。アプリ内で表示するには InfoPlist テーブルから現在の言語の値を読みます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Название на экране «Домой» зависит от языковых настроек системы и не меняется при переключении в приложении. Чтобы показать его в приложении, читайте значение из таблицы InfoPlist."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主屏幕上的名称由系统按语言设置显示，App 内切换不会改变它。若要在 App 内展示名称，从 InfoPlist 表读取当前语言的值。"
+          }
+        }
+      }
+    },
+    "sys.appName.system": {
+      "comment": "系统按启动语言解析出的名称",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ما يحدده النظام"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vom System aufgelöst"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resolved by System"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システムによる解決"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Определено системой"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统解析"
+          }
+        }
+      }
+    },
+    "sys.controls.footer": {
+      "comment": "系统控件说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تأتي عناوين عناصر النظام المضمنة (إلغاء، تعديل، تم) من أطر النظام بلغة التشغيل. أعد التشغيل بعد التبديل أو اضبط العناوين بنفسك."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eingebaute Titel von Systemelementen (Abbrechen, Bearbeiten, Fertig) stammen aus den Systemframeworks in der Startsprache. Nach einem Wechsel neu starten oder die Titel selbst setzen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Built-in titles of system controls (Cancel, Edit, Done) come from system frameworks in the launch language. Relaunch after switching in the app, or set those titles yourself."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システムコントロールの組み込みの文言（キャンセル、編集、完了など）は起動時の言語でシステムフレームワークから取得されます。切り替え後は再起動するか、自分でタイトルを設定します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Встроенные надписи системных элементов («Отменить», «Изменить», «Готово») берутся из системных фреймворков на языке запуска. После переключения перезапустите приложение или задайте надписи сами."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统控件自带的文案（取消、编辑、完成等）来自系统框架，按进程启动语言显示。App 内切换后需重启，或为这些控件自行设置标题。"
+          }
+        }
+      }
+    },
+    "sys.launch.body": {
+      "comment": "启动屏说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يرسم النظام شاشة البدء ويخزنها مؤقتًا متجاهلًا النصوص والصور المترجمة، لذا تعرض شاشة البدء في هذا المشروع شعارًا محايدًا لغويًا فقط."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Startbildschirm wird vom System gerendert und zwischengespeichert und ignoriert lokalisierte Texte und Bilder. Daher zeigt er in diesem Projekt nur ein sprachneutrales Logo."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The launch screen is rendered and cached by the system and ignores localized text and images, so this project’s launch screen shows only a language-neutral logo."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起動画面はシステムが描画・キャッシュし、ローカライズされた文字や画像は反映されません。そのため本プロジェクトでは言語に依存しないロゴのみを表示します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экран запуска рисует и кэширует система, игнорируя локализованные тексты и изображения, поэтому здесь показан только нейтральный логотип."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启动屏由系统渲染并缓存为快照，不会应用本地化文字和本地化图片，因此本项目的启动屏只放与语言无关的 Logo。"
+          }
+        }
+      }
+    },
+    "sys.permission.camera": {
+      "comment": "按钮：请求相机权限",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طلب الوصول إلى الكاميرا"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kamerazugriff anfordern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Request Camera Access"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カメラへのアクセスを要求"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запросить доступ к камере"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请求相机权限"
+          }
+        }
+      }
+    },
+    "sys.permission.footer": {
+      "comment": "权限弹窗说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يرسم النظام طلبات الأذونات باستخدام InfoPlist.strings بلغة تشغيل العملية. بعد التبديل داخل التطبيق أعد تشغيله لتحديثها، ويظهر كل طلب مرة واحدة فقط."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechtigungsdialoge zeichnet das System mit InfoPlist.strings in der Sprache, mit der der Prozess gestartet wurde. Nach einem Wechsel in der App ist ein Neustart nötig. Jeder Dialog erscheint nur einmal."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permission prompts are drawn by the system using InfoPlist.strings in the language the process launched with. After switching in the app, relaunch to update them. Each prompt appears only once."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "権限ダイアログはシステムが InfoPlist.strings を使い、プロセス起動時の言語で表示します。アプリ内で切り替えた後は再起動が必要です。各ダイアログは一度しか表示されません。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запросы разрешений рисует система, используя InfoPlist.strings на языке запуска процесса. После переключения в приложении нужен перезапуск. Каждый запрос появляется только один раз."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "权限弹窗由系统绘制，文案来自 InfoPlist.strings，语言取决于进程启动时的语言。App 内切换后需重启 App 才会更新；每个权限只会弹出一次。"
+          }
+        }
+      }
+    },
+    "sys.permission.launchLanguage": {
+      "comment": "本次进程启动时的语言",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لغة التشغيل الحالي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Startsprache"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Launch Language"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起動時の言語"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Язык при запуске"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本次启动语言"
+          }
+        }
+      }
+    },
+    "sys.permission.location": {
+      "comment": "按钮：请求定位权限",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طلب الوصول إلى الموقع"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standortzugriff anfordern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Request Location Access"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "位置情報へのアクセスを要求"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запросить доступ к геопозиции"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请求定位权限"
+          }
+        }
+      }
+    },
+    "sys.permission.photos": {
+      "comment": "按钮：请求相册权限",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طلب الوصول إلى الصور"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotozugriff anfordern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Request Photo Library Access"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真へのアクセスを要求"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запросить доступ к фото"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请求相册权限"
+          }
+        }
+      }
+    },
+    "sys.section.appName": {
+      "comment": "系统文案页分组标题",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسم التطبيق"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App-Name"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Name"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリ名"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Название приложения"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App 名称"
+          }
+        }
+      }
+    },
+    "sys.section.controls": {
+      "comment": "分组标题：系统控件",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عناصر تحكم النظام"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Systemsteuerelemente"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System Controls"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システムコントロール"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Системные элементы"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统控件"
+          }
+        }
+      }
+    },
+    "sys.section.launch": {
+      "comment": "分组标题：启动屏",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شاشة البدء"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Startbildschirm"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Launch Screen"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起動画面"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экран запуска"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启动屏"
+          }
+        }
+      }
+    },
+    "sys.section.permissions": {
+      "comment": "分组标题：权限弹窗",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طلبات الأذونات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berechtigungsdialoge"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permission Prompts"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "権限ダイアログ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запросы разрешений"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "权限弹窗"
+          }
+        }
+      }
+    },
     "tab.settings": {
       "comment": "Tab 与页面标题：设置",
       "extractionState": "manual",
@@ -1761,6 +7251,258 @@
           "stringUnit": {
             "state": "translated",
             "value": "UIKit"
+          }
+        }
+      }
+    },
+    "typo.arabic.footer": {
+      "comment": "阿拉伯语行高说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمتد الحروف والتشكيل في العربية والتايلاندية كثيرًا فوق السطر وتحته، ولذلك يقصّها الارتفاع الثابت."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arabische und thailändische Zeichen und Diakritika ragen weit über und unter die Zeile; eine feste Zeilenhöhe schneidet sie ab."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arabic and Thai glyphs and marks extend far above and below the line; a fixed line height or height clips them."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アラビア語やタイ語の字形や記号は上下に大きくはみ出すため、行の高さを固定すると切れてしまいます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Арабские и тайские символы и огласовки сильно выходят за строку; фиксированная высота строки их обрезает."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "阿拉伯语、泰语等文字的字形和音标上下延伸较多，固定行高或固定高度会裁切字符。"
+          }
+        }
+      }
+    },
+    "typo.cjk.footer": {
+      "comment": "中日字形说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "للحرف الصيني نفسه أشكال قياسية مختلفة في الصينية واليابانية، ويختار النظام الخط بحسب لغة النص. لا تغيّر ‎.environment(\\.locale)‎ في SwiftUI الأشكال؛ استخدم AttributedString.languageIdentifier، وفي UIKit استخدم kCTLanguageAttributeName."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dasselbe Han-Zeichen hat im Chinesischen und Japanischen unterschiedliche Standardformen; das System wählt die Schrift nach der Textsprache. In SwiftUI ändert .environment(\\.locale) die Glyphen nicht – verwende AttributedString.languageIdentifier (ab iOS 17 auch typesettingLanguage). In UIKit kCTLanguageAttributeName verwenden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The same Han character has different standard shapes in Chinese and Japanese, and the system picks the font by the text’s language. SwiftUI’s .environment(\\.locale) doesn’t change glyphs; use AttributedString.languageIdentifier (or typesettingLanguage on iOS 17+). In UIKit use kCTLanguageAttributeName."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同じ漢字でも中国語と日本語では標準字形が異なり、システムはテキストの言語でフォントを選びます。SwiftUI の .environment(\\.locale) では字形は変わらないため、AttributedString.languageIdentifier（iOS 17 以降は typesettingLanguage も可）を使います。UIKit では kCTLanguageAttributeName を使います。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Один и тот же иероглиф выглядит по-разному в китайском и японском, а система выбирает шрифт по языку текста. В SwiftUI .environment(\\.locale) не меняет глифы — используйте AttributedString.languageIdentifier (в iOS 17+ также typesettingLanguage). В UIKit — kCTLanguageAttributeName."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同一个汉字在中文和日文中的标准字形不同，系统按文本的语言选择字体。实测 SwiftUI 的 .environment(\\.locale) 不影响字形，需用 AttributedString.languageIdentifier（iOS 17+ 也可用 typesettingLanguage）；UIKit 用 kCTLanguageAttributeName。"
+          }
+        }
+      }
+    },
+    "typo.fallback.footer": {
+      "comment": "字体回退说明",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تغطي الخطوط المخصصة عادةً الحروف اللاتينية فقط، فتعود بقية اللغات إلى خطوط النظام بوزن وخط أساس مختلفين."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eigene Schriften decken meist nur lateinische Zeichen ab; andere Schriften fallen auf Systemschriften mit abweichender Stärke und Grundlinie zurück. Prüfe den Zeichensatz oder nutze eigene Schriften nur für lateinische Sprachen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom fonts usually cover only Latin script; other scripts fall back to system fonts with mismatched weight and baseline. Check the character set, or use custom fonts only for Latin languages."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カスタムフォントは通常ラテン文字のみに対応し、他の文字はシステムフォントにフォールバックするため、太さやベースラインがずれます。文字セットを確認するか、ラテン系言語のみに使いましょう。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Свои шрифты обычно содержат только латиницу; остальные письменности переходят на системные шрифты с другой насыщенностью и базовой линией. Проверьте набор символов или используйте свои шрифты только для латиницы."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自定义字体通常只覆盖拉丁字母，其它文字会回退到系统字体，粗细和基线可能不一致。接入前确认字符集，或只对拉丁语言使用自定义字体。"
+          }
+        }
+      }
+    },
+    "typo.section.arabic": {
+      "comment": "分组标题：阿拉伯语行高",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ارتفاع السطر العربي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arabische Zeilenhöhe"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arabic Line Height"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アラビア語の行の高さ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Высота строки в арабском"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "阿拉伯语行高"
+          }
+        }
+      }
+    },
+    "typo.section.cjk": {
+      "comment": "字体页分组标题",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أشكال الحروف الصينية واليابانية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CJK-Glyphenvarianten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CJK Glyph Variants"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日中の字形の違い"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Варианты иероглифов CJK"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "中日汉字字形"
+          }
+        }
+      }
+    },
+    "typo.section.fallback": {
+      "comment": "分组标题：自定义字体回退",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الرجوع عن الخط المخصص"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fallback bei eigenen Schriften"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom Font Fallback"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カスタムフォントのフォールバック"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резервные шрифты"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自定义字体回退"
           }
         }
       }

@@ -24,7 +24,7 @@ public struct LanguageResolver: Sendable {
     /// 从 bundle 读取支持语言；`fallback` 为空时使用开发语言。
     public init(bundle: Bundle, fallback: String? = nil, allowsScriptFallback: Bool = true) {
         self.init(
-            supported: bundle.localizations.filter { $0 != "Base" },
+            supported: AppLanguage.supportedLocalizations(in: bundle),
             fallback: fallback ?? bundle.developmentLocalization ?? "en",
             allowsScriptFallback: allowsScriptFallback
         )

@@ -13,6 +13,9 @@ final class RootTabBarController: UITabBarController {
         super.init(nibName: nil, bundle: nil)
         viewControllers = [makeSwiftUITab(), makeUIKitTab(), makeSettingsTab()]
         self.selectedIndex = selectedIndex
+        #if DEBUG
+        if let tab = DebugLaunchOptions.tab { self.selectedIndex = tab.rawValue }
+        #endif
     }
 
     @available(*, unavailable)
@@ -21,7 +24,12 @@ final class RootTabBarController: UITabBarController {
     }
 
     private func makeSwiftUITab() -> UIViewController {
-        let root = NavigationView { CatalogView() }
+        #if DEBUG
+        let initialFeature = DebugLaunchOptions.feature
+        #else
+        let initialFeature: Feature? = nil
+        #endif
+        let root = NavigationView { CatalogView(initialFeature: initialFeature) }
             .navigationViewStyle(.stack)
             .localizedRoot() // 注入 locale 与 layoutDirection
         let controller = UIHostingController(rootView: root)
@@ -32,6 +40,11 @@ final class RootTabBarController: UITabBarController {
     private func makeUIKitTab() -> UIViewController {
         let navigation = UINavigationController(rootViewController: CatalogViewController())
         navigation.navigationBar.prefersLargeTitles = true
+        #if DEBUG
+        if let feature = DebugLaunchOptions.feature {
+            navigation.pushViewController(feature.makeViewController(), animated: false)
+        }
+        #endif
         navigation.tabBarItem = UITabBarItem(title: L10n.Tab.uiKit, image: UIImage(systemName: "square.stack.3d.up"), tag: Tab.uiKit.rawValue)
         return navigation
     }

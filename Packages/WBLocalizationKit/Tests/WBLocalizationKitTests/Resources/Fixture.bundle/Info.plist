@@ -4,6 +4,13 @@
 <dict>
 	<key>CFBundleIdentifier</key>
 	<string>com.wenbo.WBLocalizationKit.Fixture</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>zh-Hans</string>
+		<string>en</string>
+		<string>ar</string>
+		<string>ru</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh-Hans</string>
 </dict>

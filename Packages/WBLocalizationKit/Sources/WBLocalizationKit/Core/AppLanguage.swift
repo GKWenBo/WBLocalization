@@ -38,8 +38,7 @@ public enum AppLanguage: Hashable, Sendable {
     /// 列表首项为 `.system`，其余按开发语言优先、再按代码字母排序。
     public static func available(in bundle: Bundle = .main) -> [AppLanguage] {
         let development = bundle.developmentLocalization
-        let codes = bundle.localizations
-            .filter { $0 != "Base" }
+        let codes = supportedLocalizations(in: bundle)
             .sorted { lhs, rhs in
                 if lhs == development { return true }
                 if rhs == development { return false }
@@ -52,6 +51,15 @@ public enum AppLanguage: Hashable, Sendable {
 // MARK: - 语言代码工具
 
 extension AppLanguage {
+    /// bundle 支持的本地化（去掉 Base、去重）。
+    ///
+    /// 实测：Info.plist 含 `CFBundleLocalizations` 时（如使用了 InfoPlist.xcstrings），
+    /// `Bundle.localizations` 会把它与 `.lproj` 目录合并，返回重复项。
+    static func supportedLocalizations(in bundle: Bundle) -> [String] {
+        var seen = Set<String>()
+        return bundle.localizations.filter { $0 != "Base" && seen.insert($0).inserted }
+    }
+
     static func displayName(of code: String, in locale: Locale) -> String? {
         // 先尝试完整标识（可区分 zh-Hans / zh-Hant），失败再退回语言码
         let name = locale.localizedString(forIdentifier: code)

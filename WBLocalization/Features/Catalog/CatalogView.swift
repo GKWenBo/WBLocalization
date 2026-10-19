@@ -2,6 +2,16 @@ import SwiftUI
 
 /// SwiftUI 功能目录。
 struct CatalogView: View {
+    /// 启动后直接进入的功能页（调试截图用）。
+    /// 不用 NavigationLink(tag:selection:)：List 懒加载，屏幕外的行尚未创建时无法跳转。
+    private let initialFeature: Feature?
+    @State private var showsInitialFeature: Bool
+
+    init(initialFeature: Feature? = nil) {
+        self.initialFeature = initialFeature
+        _showsInitialFeature = State(initialValue: initialFeature != nil)
+    }
+
     var body: some View {
         List {
             ForEach(FeatureSection.allCases) { section in
@@ -18,6 +28,16 @@ struct CatalogView: View {
         }
         .listStyle(.insetGrouped)
         .navigationTitle(L10n.Catalog.swiftUITitle)
+        .background {
+            if let initialFeature {
+                NavigationLink(isActive: $showsInitialFeature) {
+                    initialFeature.swiftUIDestination
+                } label: {
+                    EmptyView()
+                }
+                .hidden()
+            }
+        }
     }
 }
 
