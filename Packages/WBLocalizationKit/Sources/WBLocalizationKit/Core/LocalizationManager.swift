@@ -112,6 +112,9 @@ public final class LocalizationManager: ObservableObject {
         resolvedCode = code
         locale = Self.makeLocale(code: code)
         LocalizationContext.update(code: code, locale: locale)
+        #if canImport(UIKit)
+        applyLayoutDirection()
+        #endif
     }
 
     /// 语言来自 App 选择，地区沿用系统设置（影响货币、度量单位、首日等）。
@@ -141,6 +144,7 @@ public enum LocalizationContext {
 
     static func update(code: String, locale: Locale) {
         state.withLock { $0 = (code, locale) }
+        LocalizedFormatters.removeCache()
     }
 }
 
