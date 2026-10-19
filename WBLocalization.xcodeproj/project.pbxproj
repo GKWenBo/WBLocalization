@@ -264,6 +264,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "WB本地化";
+				INFOPLIST_KEY_NSCameraUsageDescription = "用于演示本地化的相机权限说明";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于演示本地化的定位权限说明";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于演示本地化的相册权限说明";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -290,6 +294,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "WB本地化";
+				INFOPLIST_KEY_NSCameraUsageDescription = "用于演示本地化的相机权限说明";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于演示本地化的定位权限说明";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于演示本地化的相册权限说明";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

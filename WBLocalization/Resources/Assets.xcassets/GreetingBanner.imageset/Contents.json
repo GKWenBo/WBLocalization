@@ -1,0 +1,47 @@
+{
+  "images": [
+    {
+      "filename": "GreetingBanner-zh-Hans.png",
+      "idiom": "universal",
+      "scale": "3x",
+      "locale": "zh-Hans"
+    },
+    {
+      "filename": "GreetingBanner-en.png",
+      "idiom": "universal",
+      "scale": "3x",
+      "locale": "en"
+    },
+    {
+      "filename": "GreetingBanner-ar.png",
+      "idiom": "universal",
+      "scale": "3x",
+      "locale": "ar"
+    },
+    {
+      "filename": "GreetingBanner-de.png",
+      "idiom": "universal",
+      "scale": "3x",
+      "locale": "de"
+    },
+    {
+      "filename": "GreetingBanner-ja.png",
+      "idiom": "universal",
+      "scale": "3x",
+      "locale": "ja"
+    },
+    {
+      "filename": "GreetingBanner-ru.png",
+      "idiom": "universal",
+      "scale": "3x",
+      "locale": "ru"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  },
+  "properties": {
+    "localizable": true
+  }
+}
