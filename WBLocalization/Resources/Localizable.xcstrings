@@ -4262,7 +4262,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don’t give text a fixed width and a single line: German and Russian are often 30%+ longer than English, while Chinese and Japanese are much shorter."
+            "value": "Don’t give text a fixed width and a single line: German and Russian often run over 30 percent longer than English, while Chinese and Japanese are much shorter."
           }
         },
         "ja": {

@@ -10,14 +10,30 @@
 		A10000000000000000000301 /* WBLocalizationKit in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000501 /* WBLocalizationKit */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A10000000000000000000C01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A10000000000000000000801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A10000000000000000000601;
+			remoteInfo = WBLocalization;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A10000000000000000000201 /* WBLocalization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBLocalization.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000202 /* WBLocalizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBLocalizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A10000000000000000000101 /* WBLocalization */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = WBLocalization;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000102 /* WBLocalizationTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WBLocalizationTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +47,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A10000000000000000000712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				A10000000000000000000101 /* WBLocalization */,
+				A10000000000000000000102 /* WBLocalizationTests */,
 				A10000000000000000000002 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				A10000000000000000000201 /* WBLocalization.app */,
+				A10000000000000000000202 /* WBLocalizationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +101,27 @@
 			productReference = A10000000000000000000201 /* WBLocalization.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A10000000000000000000602 /* WBLocalizationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000000000903 /* Build configuration list for PBXNativeTarget "WBLocalizationTests" */;
+			buildPhases = (
+				A10000000000000000000711 /* Sources */,
+				A10000000000000000000712 /* Frameworks */,
+				A10000000000000000000713 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A10000000000000000000C02 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A10000000000000000000102 /* WBLocalizationTests */,
+			);
+			name = WBLocalizationTests;
+			productName = WBLocalizationTests;
+			productReference = A10000000000000000000202 /* WBLocalizationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -88,6 +134,10 @@
 				TargetAttributes = {
 					A10000000000000000000601 = {
 						CreatedOnToolsVersion = 27.0;
+					};
+					A10000000000000000000602 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = A10000000000000000000601;
 					};
 				};
 			};
@@ -114,12 +164,20 @@
 			projectRoot = "";
 			targets = (
 				A10000000000000000000601 /* WBLocalization */,
+				A10000000000000000000602 /* WBLocalizationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A10000000000000000000703 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000713 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -136,7 +194,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A10000000000000000000711 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A10000000000000000000C02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10000000000000000000601 /* WBLocalization */;
+			targetProxy = A10000000000000000000C01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A10000000000000000000A01 /* Debug */ = {
@@ -316,6 +389,42 @@
 			};
 			name = Release;
 		};
+		A10000000000000000000B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenbo.WBLocalizationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WBLocalization.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WBLocalization";
+			};
+			name = Debug;
+		};
+		A10000000000000000000B12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenbo.WBLocalizationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WBLocalization.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WBLocalization";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +442,15 @@
 			buildConfigurations = (
 				A10000000000000000000B01 /* Debug */,
 				A10000000000000000000B02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000000000000000000903 /* Build configuration list for PBXNativeTarget "WBLocalizationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000B11 /* Debug */,
+				A10000000000000000000B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
