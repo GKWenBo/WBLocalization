@@ -1,6 +1,16 @@
 {
   "images" : [
     {
+      "idiom" : "universal",
+      "language-direction" : "left-to-right",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "language-direction" : "left-to-right",
+      "scale" : "2x"
+    },
+    {
       "filename" : "ForwardArrow.png",
       "idiom" : "universal",
       "language-direction" : "left-to-right",

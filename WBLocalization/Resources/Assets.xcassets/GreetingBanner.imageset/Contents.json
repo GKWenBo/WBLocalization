@@ -1,47 +1,107 @@
 {
-  "images": [
+  "images" : [
     {
-      "filename": "GreetingBanner-zh-Hans.png",
-      "idiom": "universal",
-      "scale": "3x",
-      "locale": "zh-Hans"
+      "idiom" : "universal",
+      "locale" : "zh-Hans",
+      "scale" : "1x"
     },
     {
-      "filename": "GreetingBanner-en.png",
-      "idiom": "universal",
-      "scale": "3x",
-      "locale": "en"
+      "idiom" : "universal",
+      "locale" : "zh-Hans",
+      "scale" : "2x"
     },
     {
-      "filename": "GreetingBanner-ar.png",
-      "idiom": "universal",
-      "scale": "3x",
-      "locale": "ar"
+      "filename" : "GreetingBanner-zh-Hans.png",
+      "idiom" : "universal",
+      "locale" : "zh-Hans",
+      "scale" : "3x"
     },
     {
-      "filename": "GreetingBanner-de.png",
-      "idiom": "universal",
-      "scale": "3x",
-      "locale": "de"
+      "idiom" : "universal",
+      "locale" : "en",
+      "scale" : "1x"
     },
     {
-      "filename": "GreetingBanner-ja.png",
-      "idiom": "universal",
-      "scale": "3x",
-      "locale": "ja"
+      "idiom" : "universal",
+      "locale" : "en",
+      "scale" : "2x"
     },
     {
-      "filename": "GreetingBanner-ru.png",
-      "idiom": "universal",
-      "scale": "3x",
-      "locale": "ru"
+      "filename" : "GreetingBanner-en.png",
+      "idiom" : "universal",
+      "locale" : "en",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "ar",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "ar",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "GreetingBanner-ar.png",
+      "idiom" : "universal",
+      "locale" : "ar",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "de",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "de",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "GreetingBanner-de.png",
+      "idiom" : "universal",
+      "locale" : "de",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "ja",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "ja",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "GreetingBanner-ja.png",
+      "idiom" : "universal",
+      "locale" : "ja",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "ru",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "locale" : "ru",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "GreetingBanner-ru.png",
+      "idiom" : "universal",
+      "locale" : "ru",
+      "scale" : "3x"
     }
   ],
-  "info": {
-    "author": "xcode",
-    "version": 1
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
   },
-  "properties": {
-    "localizable": true
+  "properties" : {
+    "localizable" : true
   }
 }
